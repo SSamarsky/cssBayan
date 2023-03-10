@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-h1, 
+h1,
 h3 {
     margin: 0;
 }
@@ -16,13 +16,13 @@ h3 {
 }
 
 .accordion {
-    min-width: 50%;
-    border: 1px solid #000;
-    cursor: pointer;
+    min-width: 30%;
 }
 
-.accordion__title {
+.accordion__title {}
 
+.accordion__item {
+    cursor: pointer;
 }
 
 .item__title {
@@ -34,10 +34,11 @@ h3 {
 .item__icon {
     width: 15px;
     height: 15px;
+    transition: all .3s ease;
 }
 
 .item__flag {
-   display: none;
+    display: none;
 }
 
 .item__content {
@@ -52,10 +53,26 @@ h3 {
     height: auto;
 }
 
-#flag-1:checked + #content-1 {
+#flag-1:checked+div div svg {
+    transform: rotate(45deg);
+}
+
+#flag-1:checked+div div {
     max-height: 200px;
 }
 
-#flag-2:checked + #content-2 {
+#flag-2:checked+div div svg {
+    transform: rotate(45deg);
+}
+
+#flag-2:checked+div div {
+    max-height: 200px;
+}
+
+#flag-3:checked+div div svg {
+    transform: rotate(45deg);
+}
+
+#flag-3:checked+div div {
     max-height: 200px;
 }
