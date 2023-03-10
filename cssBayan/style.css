@@ -76,3 +76,27 @@ h3 {
 #flag-3:checked+div div {
     max-height: 200px;
 }
+
+#item-1:hover #content-1 {
+    max-height: 200px;
+}
+
+#item-1:hover div div svg {
+    transform: rotate(45deg);
+}
+
+#item-2:hover #content-2 {
+    max-height: 200px;
+}
+
+#item-2:hover div div svg {
+    transform: rotate(45deg);
+}
+
+#item-3:hover #content-3 {
+    max-height: 200px;
+}
+
+#item-3:hover div div svg {
+    transform: rotate(45deg);
+}
