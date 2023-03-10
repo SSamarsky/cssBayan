@@ -7,6 +7,11 @@ h3 {
     margin: 0;
 }
 
+:root {
+    --passive-color: rgb(4, 2, 14);
+    --active-color: rgb(41, 14, 163);
+  }
+
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -29,6 +34,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: var(--passive-color)
 }
 
 .item__icon {
@@ -53,29 +59,45 @@ h3 {
     height: auto;
 }
 
+#flag-1:checked+div div h3 {
+    color: var(--active-color);
+}
+
 #flag-1:checked+div div svg {
     transform: rotate(45deg);
+    fill: var(--active-color);
 }
 
 #flag-1:checked+div div {
     max-height: 200px;
 }
 
+#flag-2:checked+div div h3 {
+    color: var(--active-color);
+}
+
 #flag-2:checked+div div svg {
     transform: rotate(45deg);
+    fill: var(--active-color);
 }
 
 #flag-2:checked+div div {
     max-height: 200px;
 }
 
+#flag-3:checked+div div h3 {
+    color: var(--active-color);
+}
+
 #flag-3:checked+div div svg {
     transform: rotate(45deg);
+    fill: var(--active-color);
 }
 
 #flag-3:checked+div div {
     max-height: 200px;
 }
+
 
 #item-1:hover #content-1 {
     max-height: 200px;
