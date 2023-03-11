@@ -18,14 +18,22 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #d6ede3;
 }
 
 .container__accordion {
-    min-width: 40%;
+    min-width: 50%;
+}
+
+.container__title {
+    margin-bottom: 1vh;
+    font-size: 5vw;
+    color: #1e430a;
+    font-family: 'Rampart One', cursive;
 }
 
 .accordion {
-    width: 100%;
+    
 }
 
 .accordion:hover label div svg {
@@ -116,7 +124,7 @@ h3 {
 #item-2:hover #content-2,
 #item-3:hover #content-3,
 #item-4:hover #content-4,
-#item-4:hover #content-5 {
+#item-5:hover #content-5 {
     max-height: 200px;
 }
 
