@@ -28,6 +28,14 @@ h3 {
     width: 100%;
 }
 
+.accordion:hover label div svg {
+    opacity: 1;
+}
+
+.accordion:hover label div h3 {
+    color: rgb(12, 10, 26);
+}
+
 .accordion__item {
     cursor: pointer;
 }
@@ -44,14 +52,6 @@ h3 {
     height: 15px;
     opacity: 0;
     transition: all .3s ease;
-}
-
-.accordion:hover label div svg {
-    opacity: 1;
-}
-
-.accordion:hover label div h3 {
-    color: rgb(12, 10, 26);
 }
 
 .item__flag {
@@ -71,210 +71,83 @@ h3 {
     transition: all .3s ease-in-out;
 }
 
-
-#flag-1:checked+div div h3 {
-    color: var(--active-color);
-}
-
-#flag-1:checked+div div svg {
-    transform: rotate(45deg);
-    fill: var(--active-color);
-}
-
-#flag-1:checked+div div {
-    max-height: 200px;
-}
-
-#flag-1:checked+div div img {
-    opacity: 1;
-}
-
-#flag-2:checked+div div h3 {
-    color: var(--active-color);
-}
-
-#flag-2:checked+div div svg {
-    transform: rotate(45deg);
-    fill: var(--active-color);
-}
-
-#flag-2:checked+div div {
-    max-height: 200px;
-}
-
-#flag-2:checked+div div img {
-    opacity: 1;
-}
-
-#flag-3:checked+div div h3 {
-    color: var(--active-color);
-}
-
-#flag-3:checked+div div svg {
-    transform: rotate(45deg);
-    fill: var(--active-color);
-}
-
-#flag-3:checked+div div {
-    max-height: 200px;
-}
-
-#flag-3:checked+div div img {
-    opacity: 1;
-}
-
-#flag-4:checked+div div h3 {
-    color: var(--active-color);
-}
-
-#flag-4:checked+div div svg {
-    transform: rotate(45deg);
-    fill: var(--active-color);
-}
-
-#flag-4:checked+div div {
-    max-height: 200px;
-}
-
-#flag-4:checked+div div img {
-    opacity: 1;
-}
-
+#flag-1:checked+div div h3,
+#flag-2:checked+div div h3,
+#flag-3:checked+div div h3,
+#flag-4:checked+div div h3,
 #flag-5:checked+div div h3 {
     color: var(--active-color);
 }
 
+#flag-1:checked+div div svg,
+#flag-2:checked+div div svg,
+#flag-3:checked+div div svg,
+#flag-4:checked+div div svg,
 #flag-5:checked+div div svg {
     transform: rotate(45deg);
     fill: var(--active-color);
 }
 
+#flag-1:checked+div div,
+#flag-2:checked+div div,
+#flag-3:checked+div div,
+#flag-4:checked+div div,
 #flag-5:checked+div div {
     max-height: 200px;
 }
 
+#flag-1:checked+div div img,
+#flag-2:checked+div div img,
+#flag-3:checked+div div img,
+#flag-4:checked+div div img,
 #flag-5:checked+div div img {
     opacity: 1;
 }
 
-
-#item-1:hover #content-1 {
-    max-height: 200px;
-}
-
-#item-1:hover div div svg {
-    transform: rotate(45deg);
-}
-
-#item-1:hover div div img {
-    opacity: 1;
-}
-
-#item-2:hover #content-2 {
-    max-height: 200px;
-}
-
-#item-2:hover div div svg {
-    transform: rotate(45deg);
-}
-
-#item-2:hover div div img {
-    opacity: 1;
-}
-
-#item-3:hover #content-3 {
-    max-height: 200px;
-}
-
-#item-3:hover div div svg {
-    transform: rotate(45deg);
-}
-
-#item-3:hover div div img {
-    opacity: 1;
-}
-
-#item-4:hover #content-4 {
-    max-height: 200px;
-}
-
-#item-4:hover div div svg {
-    transform: rotate(45deg);
-}
-
-#item-4:hover div div img {
-    opacity: 1;
-}
-
-#item-5:hover #content-5 {
-    max-height: 200px;
-}
-
+#item-1:hover div div svg,
+#item-2:hover div div svg,
+#item-3:hover div div svg,
+#item-4:hover div div svg,
 #item-5:hover div div svg {
     transform: rotate(45deg);
 }
 
+#item-1:hover #content-1,
+#item-2:hover #content-2,
+#item-3:hover #content-3,
+#item-4:hover #content-4,
+#item-4:hover #content-5 {
+    max-height: 200px;
+}
+
+#item-1:hover div div img,
+#item-2:hover div div img,
+#item-3:hover div div img,
+#item-4:hover div div img,
 #item-5:hover div div img {
     opacity: 1;
 }
 
-
-#item-1:active div div h3 {
-    color: rgb(44, 11, 213);
-}
-
-#item-1:active div div svg {
-    fill: rgb(44, 11, 213);
-}
-
-#item-1:active div div img {
-    opacity: 0.5;
-}
-
-#item-2:active div div h3 {
-    color: rgb(44, 11, 213);
-}
-
-#item-2:active div div svg {
-    fill: rgb(44, 11, 213);
-}
-
-#item-2:active div div img {
-    opacity: 0.5;
-}
-
-#item-3:active div div h3 {
-    color: rgb(44, 11, 213);
-}
-
-#item-3:active div div svg {
-    fill: rgb(44, 11, 213);
-}
-
-#item-3:active div div img {
-    opacity: 0.5;
-}
-
-#item-4:active div div h3 {
-    color: rgb(44, 11, 213);
-}
-
-#item-4:active div div svg {
-    fill: rgb(44, 11, 213);
-}
-
-#item-4:active div div img {
-    opacity: 0.5;
-}
-
+#item-1:active div div h3,
+#item-2:active div div h3,
+#item-3:active div div h3,
+#item-4:active div div h3,
 #item-5:active div div h3 {
     color: rgb(44, 11, 213);
 }
 
+#item-1:active div div svg,
+#item-2:active div div svg,
+#item-3:active div div svg,
+#item-4:active div div svg,
 #item-5:active div div svg {
     fill: rgb(44, 11, 213);
 }
 
+#item-1:active div div img,
+#item-2:active div div img,
+#item-3:active div div img,
+#item-4:active div div img,
 #item-5:active div div img {
     opacity: 0.5;
 }
