@@ -8,9 +8,9 @@ h3 {
 }
 
 :root {
-    --passive-color: rgb(4, 2, 14);
-    --active-color: rgb(41, 14, 163);
-  }
+    --passive-color: rgb(44, 11, 213);
+    --active-color: rgb(12, 10, 26);
+}
 
 .wrapper {
     width: 100vw;
@@ -25,7 +25,7 @@ h3 {
 }
 
 .accordion {
-   width: 100%;
+    width: 100%;
 }
 
 .accordion__item {
@@ -46,8 +46,12 @@ h3 {
     transition: all .3s ease;
 }
 
-.accordion:hover label  div svg {
+.accordion:hover label div svg {
     opacity: 1;
+}
+
+.accordion:hover label div h3 {
+    color: rgb(12, 10, 26);
 }
 
 .item__flag {
@@ -63,7 +67,8 @@ h3 {
 
 .content__img {
     width: 200px;
-    height: auto;
+    opacity: 0;
+    transition: all .3s ease-in-out;
 }
 
 
@@ -80,6 +85,10 @@ h3 {
     max-height: 200px;
 }
 
+#flag-1:checked+div div img {
+    opacity: 1;
+}
+
 #flag-2:checked+div div h3 {
     color: var(--active-color);
 }
@@ -91,6 +100,10 @@ h3 {
 
 #flag-2:checked+div div {
     max-height: 200px;
+}
+
+#flag-2:checked+div div img {
+    opacity: 1;
 }
 
 #flag-3:checked+div div h3 {
@@ -106,6 +119,10 @@ h3 {
     max-height: 200px;
 }
 
+#flag-3:checked+div div img {
+    opacity: 1;
+}
+
 #flag-4:checked+div div h3 {
     color: var(--active-color);
 }
@@ -117,6 +134,10 @@ h3 {
 
 #flag-4:checked+div div {
     max-height: 200px;
+}
+
+#flag-4:checked+div div img {
+    opacity: 1;
 }
 
 #flag-5:checked+div div h3 {
@@ -132,6 +153,10 @@ h3 {
     max-height: 200px;
 }
 
+#flag-5:checked+div div img {
+    opacity: 1;
+}
+
 
 #item-1:hover #content-1 {
     max-height: 200px;
@@ -139,6 +164,10 @@ h3 {
 
 #item-1:hover div div svg {
     transform: rotate(45deg);
+}
+
+#item-1:hover div div img {
+    opacity: 1;
 }
 
 #item-2:hover #content-2 {
@@ -149,12 +178,20 @@ h3 {
     transform: rotate(45deg);
 }
 
+#item-2:hover div div img {
+    opacity: 1;
+}
+
 #item-3:hover #content-3 {
     max-height: 200px;
 }
 
 #item-3:hover div div svg {
     transform: rotate(45deg);
+}
+
+#item-3:hover div div img {
+    opacity: 1;
 }
 
 #item-4:hover #content-4 {
@@ -165,10 +202,79 @@ h3 {
     transform: rotate(45deg);
 }
 
+#item-4:hover div div img {
+    opacity: 1;
+}
+
 #item-5:hover #content-5 {
     max-height: 200px;
 }
 
 #item-5:hover div div svg {
     transform: rotate(45deg);
+}
+
+#item-5:hover div div img {
+    opacity: 1;
+}
+
+
+#item-1:active div div h3 {
+    color: rgb(44, 11, 213);
+}
+
+#item-1:active div div svg {
+    fill: rgb(44, 11, 213);
+}
+
+#item-1:active div div img {
+    opacity: 0.5;
+}
+
+#item-2:active div div h3 {
+    color: rgb(44, 11, 213);
+}
+
+#item-2:active div div svg {
+    fill: rgb(44, 11, 213);
+}
+
+#item-2:active div div img {
+    opacity: 0.5;
+}
+
+#item-3:active div div h3 {
+    color: rgb(44, 11, 213);
+}
+
+#item-3:active div div svg {
+    fill: rgb(44, 11, 213);
+}
+
+#item-3:active div div img {
+    opacity: 0.5;
+}
+
+#item-4:active div div h3 {
+    color: rgb(44, 11, 213);
+}
+
+#item-4:active div div svg {
+    fill: rgb(44, 11, 213);
+}
+
+#item-4:active div div img {
+    opacity: 0.5;
+}
+
+#item-5:active div div h3 {
+    color: rgb(44, 11, 213);
+}
+
+#item-5:active div div svg {
+    fill: rgb(44, 11, 213);
+}
+
+#item-5:active div div img {
+    opacity: 0.5;
 }
