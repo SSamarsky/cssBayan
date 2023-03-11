@@ -59,6 +59,7 @@ h3 {
     height: auto;
 }
 
+
 #flag-1:checked+div div h3 {
     color: var(--active-color);
 }
@@ -98,6 +99,32 @@ h3 {
     max-height: 200px;
 }
 
+#flag-4:checked+div div h3 {
+    color: var(--active-color);
+}
+
+#flag-4:checked+div div svg {
+    transform: rotate(45deg);
+    fill: var(--active-color);
+}
+
+#flag-4:checked+div div {
+    max-height: 200px;
+}
+
+#flag-5:checked+div div h3 {
+    color: var(--active-color);
+}
+
+#flag-5:checked+div div svg {
+    transform: rotate(45deg);
+    fill: var(--active-color);
+}
+
+#flag-5:checked+div div {
+    max-height: 200px;
+}
+
 
 #item-1:hover #content-1 {
     max-height: 200px;
@@ -120,5 +147,21 @@ h3 {
 }
 
 #item-3:hover div div svg {
+    transform: rotate(45deg);
+}
+
+#item-4:hover #content-4 {
+    max-height: 200px;
+}
+
+#item-4:hover div div svg {
+    transform: rotate(45deg);
+}
+
+#item-5:hover #content-5 {
+    max-height: 200px;
+}
+
+#item-5:hover div div svg {
     transform: rotate(45deg);
 }
