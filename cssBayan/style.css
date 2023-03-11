@@ -175,9 +175,23 @@ h3 {
         font-size: 2.5vw;
     }
 
+    .accordion:hover label div svg {
+        opacity: 1;
+        fill: var(--passive-color)
+    }
+
+    .accordion:hover label div h3 {
+        color: var(--passive-color)
+    }
+
+    .item__title {
+        color: var(--passive-color);
+    }
+
     .item__icon {
         width: 2.7vw;
         height: 2.7vw;
+        fill: var(--passive-color);
     }
 
     .content__img {
