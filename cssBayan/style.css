@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+:root {
+    --passive-color: #1e430a;
+    --active-color: #1e7332;
+}
+
+.wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8efed;
+}
+
+.container__accordion {
+    margin: 2vw;
+    min-width: 35%;
+}
+
+.container__title {
+    margin-bottom: 1vh;
+    font-size: 4vw;
+    color: #1e430a;
+    font-family: 'Rampart One', cursive;
+}
+
+.accordion:hover label div svg {
+    opacity: 1;
+    fill: var(--active-color)
+}
+
+.accordion:hover label div h3 {
+    color: var(--active-color)
+}
+
+.accordion__item {
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+
+.item__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+    color: var(--passive-color);
+}
+
+.item__icon {
+    width: 1.6vw;
+    height: 1.6vw;
+    fill: var(--passive-color);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.item__flag {
+    display: none;
+}
+
+.item__content {
+    max-height: 0;
+    text-align: center;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.content__img {
+    padding: 0.5vw;
+    width: 20vw;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+#flag-1:checked+div div h3,
+#flag-2:checked+div div h3,
+#flag-3:checked+div div h3,
+#flag-4:checked+div div h3,
+#flag-5:checked+div div h3 {
+    color: var(--active-color);
+}
+
+#flag-1:checked+div div svg,
+#flag-2:checked+div div svg,
+#flag-3:checked+div div svg,
+#flag-4:checked+div div svg,
+#flag-5:checked+div div svg {
+    transform: rotate(45deg);
+    fill: var(--active-color);
+}
+
+#flag-1:checked+div div,
+#flag-2:checked+div div,
+#flag-3:checked+div div,
+#flag-4:checked+div div,
+#flag-5:checked+div div {
+    max-height: 100vw;
+}
+
+#flag-1:checked+div div img,
+#flag-2:checked+div div img,
+#flag-3:checked+div div img,
+#flag-4:checked+div div img,
+#flag-5:checked+div div img {
+    opacity: 1;
+}
+
+#item-1:hover div div svg,
+#item-2:hover div div svg,
+#item-3:hover div div svg,
+#item-4:hover div div svg,
+#item-5:hover div div svg {
+    transform: rotate(45deg);
+}
+
+#item-1:hover #content-1,
+#item-2:hover #content-2,
+#item-3:hover #content-3,
+#item-4:hover #content-4,
+#item-5:hover #content-5 {
+    max-height: 100vw;
+}
+
+#item-1:hover div div img,
+#item-2:hover div div img,
+#item-3:hover div div img,
+#item-4:hover div div img,
+#item-5:hover div div img {
+    opacity: 1;
+}
+
+#item-1:active div div h3,
+#item-2:active div div h3,
+#item-3:active div div h3,
+#item-4:active div div h3,
+#item-5:active div div h3 {
+    color: var(--passive-color);
+}
+
+#item-1:active div div svg,
+#item-2:active div div svg,
+#item-3:active div div svg,
+#item-4:active div div svg,
+#item-5:active div div svg {
+    fill: var(--passive-color);
+
+}
+
+#item-1:active div div img,
+#item-2:active div div img,
+#item-3:active div div img,
+#item-4:active div div img,
+#item-5:active div div img {
+    opacity: 0.5;
+    transform: rotate(3deg);
+}
+
+@media (max-width: 820px) {
+    .container__title {
+        margin-bottom: 1vh;
+        font-size: 5vw;
+    }
+
+    .accordion__item {
+        font-size: 2.5vw;
+    }
+
+    .accordion:hover label div svg {
+        opacity: 1;
+        fill: var(--passive-color)
+    }
+
+    .accordion:hover label div h3 {
+        color: var(--passive-color)
+    }
+
+    .item__title {
+        color: var(--passive-color);
+    }
+
+    .item__icon {
+        width: 2.7vw;
+        height: 2.7vw;
+        fill: var(--passive-color);
+    }
+
+    .content__img {
+        padding: 0.5vw;
+        width: 35vw;
+    }
+}
+
+@media (max-width: 420px) {
+    .container__title {
+        font-size: 10vw;
+    }
+
+    .accordion__item {
+        font-size: 4vw;
+    }
+
+    .item__icon {
+        width: 2.7vw;
+        height: 2.7vw;
+    }
+
+    .content__img {
+        padding: 1vw;
+        width: 60vw;
+        height: auto;
+    }
+}
