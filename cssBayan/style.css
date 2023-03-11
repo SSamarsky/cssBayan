@@ -20,11 +20,13 @@ h3 {
     align-items: center;
 }
 
-.accordion {
-    min-width: 30%;
+.container__accordion {
+    min-width: 40%;
 }
 
-.accordion__title {}
+.accordion {
+   width: 100%;
+}
 
 .accordion__item {
     cursor: pointer;
@@ -40,7 +42,12 @@ h3 {
 .item__icon {
     width: 15px;
     height: 15px;
+    opacity: 0;
     transition: all .3s ease;
+}
+
+.accordion:hover label  div svg {
+    opacity: 1;
 }
 
 .item__flag {
